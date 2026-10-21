@@ -64,4 +64,4 @@ else:
             plt.grid(True)
             plt.axhline(y=0,color="green")
             st.pyplot(plt.gcf())
-            plt.show()
+            
