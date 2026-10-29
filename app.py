@@ -11,18 +11,21 @@ st.subheader("Bisection Method")
 st.write("Find an approximate root of a polynomial using the Bisection Method.")
 
 with st.expander("Details & Explanation") :
-      st.write(""" About the Application\n
-      This application finds an approximate root of a polynomial using the Bisection Method.\n
-      How to Enter the Polynomial\n
-      Enter the number of terms, then provide the coefficient and exponent for each term. Finally, enter the constant term.\n
-      Choosing the Interval\n
-      Enter the lower and upper bounds where you want to find a root. The function values at the two bounds should have opposite signs.\n
-      How the Method Works\n
-      The method repeatedly divides the interval into two halves and selects the half that contains a sign change until the required accuracy is reached.\n
-      Understanding the Results\n
-      Approximate Root shows the estimated root. Number of Iterations shows how many steps were performed. The graph displays the polynomial, while the table shows the calculation steps.\n
-      Important Note\n
-      The result is approximate. The method requires a continuous function and a suitable interval.""")
+      st.write("""حول التطبيق\n
+      يتيح هذا التطبيق إيجاد جذر تقريبي لكثير الحدود باستخدام طريقة التنصيف (Bisection Method).\n
+      كيفية إدخال كثير الحدود\n
+      أدخلي عدد الحدود، ثم حددي معامل كل حد وأُسّه. وأخيرًا، أدخلي الحد الثابت.\n
+      اختيار الفترة\n
+      أدخلي الحد الأدنى والحد الأعلى للفترة التي تريدين إيجاد الجذر ضمنها. يجب أن تكون قيم الدالة عند طرفَي الفترة مختلفتَي الإشارة.\n
+      كيف تعمل الطريقة؟\n
+      تقسم الطريقة الفترة إلى نصفين بشكل متكرر، ثم تختار النصف الذي يحتوي على تغيّر في إشارة الدالة، وتستمر بهذه العملية حتى الوصول إلى الدقة المطلوبة.\n
+      فهم النتائج\n
+      الجذر التقريبي: يعرض القيمة التقريبية للجذر الذي تم إيجاده.\n
+      عدد التكرارات: يعرض عدد الخطوات التي نُفّذت للوصول إلى النتيجة.\n
+      الرسم البياني: يعرض منحنى كثير الحدود.\n
+      جدول التكرارات: يعرض خطوات الحساب التي أُجريت خلال تطبيق الطريقة.\n
+      ملاحظة مهمة\n
+      النتيجة تقريبية، وتتطلب طريقة التنصيف أن تكون الدالة متصلة وأن تكون الفترة المختارة مناسبة لتطبيق الطريقة.""")
       st.subheader("Example")
       st.write("""
       Suppose you want to find a root of the polynomial f(x) = x² - 4.\n
