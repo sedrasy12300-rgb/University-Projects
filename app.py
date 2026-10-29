@@ -85,9 +85,15 @@ constStr =const
 if constStr >=0:
       constStr="+"+ str(constStr)
 chng =chng + str(constStr)
-
       
 st.latex(chng)
+
+col5,col6 =st.columns(2)
+with col5:
+      precision_power = st.number_input("Select the desired solution precision (10⁻ⁿ)\n.A higher precision gives a more accurate approximate root.(2-7) ",value=4,min_value=2,max_value=7)
+with col6:
+      st.latex(f"epsilon = 10^{{{-precision_power}}}")
+      
 
 if (a>b):
         st.warning("Invalid interval : a must be less than b. ")
@@ -102,12 +108,14 @@ elif f(a)* f(b) == 0:
         else:
             st.success(f" A root was found at the upper bound: {b}")
 
+
+
 else:
        if st.button("Show"):
             
             x=np.linspace(a,b,1000)
-
-            epsilon=10**(-4)
+            
+            epsilon=10**(-precision_power)
             count =0
             found=False
             iteration_data =[]
