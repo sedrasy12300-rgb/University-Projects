@@ -47,7 +47,7 @@ exponentents =[]
 for i in range(1,num_terms+1):
     col1 ,col2 =st.columns(2)
     with col1: 
-          coef =st.number_input(f"Enter coefficient for term  {i} : ",value=0)
+          coef =st.number_input(f"Enter coefficient for term  {i} : ")
     coefficients.append(coef)
     with col2:
           exp =st.number_input(f"Enter exponent for term  {i} (0-20) : ",min_value=0,max_value=20)
